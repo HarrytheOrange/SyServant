@@ -1,24 +1,15 @@
 # SyServant 🤵
- Loyal AI servant for yout system all the time
+SyServant is your loyal AI servant, ready to assist your system at all times.
 
+## Environment Requirements
+- `pytorch` with CUDA support
+- `transformers`
+- `moviepy`
 
-# Environment Requirement
- pytorch with cuda
+## Simple Usage
+- Run `capture_screenshots.py` to record your screen. Adjust the `timer = threading.Timer(3, func, [])` setting to change the frame rate (default is 0.33 fps).
+- Run `analyse_pics.py` to generate descriptions for all the screenshots, and output the results to a CSV file.
 
- transformers
-
- moviepy
-
-
-# Simple Usage
- run capture_screenshots.py to record your screen.
-
- timer = threading.Timer(3, func, []) means 0.33 fps, you can modify this.
-
- run analyse_pics.py to generate screen description for all the screenshots, generating a csv file.
-
-
-# TODO
- --summarize the screen descriptions with LMs
- 
- --Try Video-LLMs for faster analyse
+## TODO
+- Summarize the screen descriptions using Language Models.
+- Explore the use of Video-LLMs for faster analysis.
