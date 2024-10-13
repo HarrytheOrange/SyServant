@@ -84,7 +84,7 @@ def load_image(image_file, input_size=448, max_num=12):
     return pixel_values
 
 
-path = 'D:\Code\Syservant\InternVL2-1B'
+path = 'D:\Models\InternVL2-1B'
 model = AutoModel.from_pretrained(
     path,
     torch_dtype=torch.bfloat16,
